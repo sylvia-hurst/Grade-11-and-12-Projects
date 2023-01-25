@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sylvia's Wonderful Web Page</title>
+        <link rel="icon" href="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v156-mint-tang-08-icons_2.jpg?w=1200&amp;h=1200&amp;dpr=1&amp;fit=clip&amp;crop=default&amp;fm=jpg&amp;q=75&amp;vib=3&amp;con=3&amp;usm=15&amp;cs=srgb&amp;bg=F4F4F3&amp;ixlib=js-2.2.1&amp;s=e2dd07aeaa4d89065d2a50ea8c8c3a74">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> body {color:#D981FF; background-color:#F5DDFF; font-family:Trebuchet MS;}
+        h1 {font-family:Comic Sans MS; font-size:40pt;}
+        h2 {font-family:Comic Sans MS; font-size:35pt;}
+        h3 {font-family:Comic Sans MS; font-size:30pt;}
+        h4 {font-family:Comic Sans MS; font-size:25pt;}
+        h5 {font-family:Comic Sans MS; font-size:20pt;}
+        h6 {font-family:Comic Sans MS; font-size:15pt;}</style>
+    </head>
+    <body>
+        <h1 style="text-align:center">Welcome to <i>Sylvia's Wonderful Web Page!</i></h1>
+        <p style="text-align:center">Here I am showcasing my epic HTML coding skills!</p>
+        <p style="text-align:center"><img src="https://i.pinimg.com/originals/df/d0/b0/dfd0b0f00a35b820aa28aa22e3c2782f.gif" alt="Isn't this so cute?"></p>\
+        
+        <h5 style="text-align:center"><u>JavaScript Program - Rounding Error</u></h5>
+        
+        <p style="text-align:center"><input type="text" id="kI" value="Input a number here..."></p>
+        
+        <p style="text-align:center"><button onclick="myFunction()">Calculate round-off error!</button></p>
+        
+        <p style="text-align:center">Square of the square root:</p>
+
+        <p style="text-align:center" id="sqsqr"></p>
+        
+        <p style="text-align:center">Error margin:</p>
+        
+        <p style="text-align:center" id="error"></p>
+
+        <script>
+        function myFunction() {
+          var x = document.getElementById("kI").value;
+          var y = Math.sqrt(x);
+          y = y*y;
+          document.getElementById("sqsqr").innerHTML = y;
+          var z = y-x;
+          document.getElementById("error").innerHTML = z;
+        }
+        </script>
+    </body>
+</html>
